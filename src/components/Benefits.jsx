@@ -32,14 +32,14 @@ import React from 'react';
         <section className="benefits">
           <div className="container">
             <h2>Core Benefits</h2>
-            <ul>
+            <div className="benefits-grid">
               {benefitsData.map((benefit, index) => (
-                <li key={index}>
+                <div className="benefit" key={index}>
                   <h3>{benefit.title}</h3>
                   <p>{benefit.description}</p>
-                </li>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
         </section>
       );
